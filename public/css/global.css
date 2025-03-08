@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    color: #02416d;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    max-width: 920px;
+}
+
+header {
+    background-color: #f8f8ec;
+    font-weight: 700;
+    padding: 0 1rem;
+
+    & .container-header {
+        height: 5rem;
+        width: 100%;
+        margin: auto;
+        max-width: 920px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    & img {
+        width: 6rem;
+    }
+
+    & .header-nome {
+        font-size: 0.5rem;
+    }
+
+    & ul {
+        display: none;
+    }
+
+    & a:hover {
+        color: #066699;
+        transition: 0.1s ease-in-out;
+    }
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 450px;
+    padding: 2rem 1rem 0 1rem;
+    width: 100%;
+    background-color: #02416d;
+
+    & .container {
+        position: relative;
+        display: flex;
+    }
+
+    & h1 {
+        color: #f8f8ec;
+        font-size: 3rem;
+    }
+
+    & p {
+        color: #f8f8ec;
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+    }
+
+    & img {
+        max-width: 215px;
+    }
+}
+
+#sobre,
+#servicos,
+#vantagens,
+#depoimentos,
+#contato {
+    background-color: #f8f8ec;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    width: 100%;
+
+    & .section-titulo {
+        font-size: 2.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    & .section-conteudo__texto {
+        font-size: 1.25rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+
+    & .card {
+        background-color: #aedd2b;
+        border-radius: 12px;
+        width: 350px;
+        height: 220px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & .card-titulo {
+        font-size: 1.75rem;
+    }
+
+    & .card-conteudo {
+        font-size: 1.2rem;
+        padding-top: 1rem;
+    }
+}
+
+.depoimentos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+
+    & .depoimento {
+        background-color: #aedd2b;
+        border-radius: 50%;
+        height: 320px;
+        max-width: 380px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & p {
+            padding: 1rem;
+        }
+    }
+}
+
+.contato-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+
+    & .contato-redes {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        gap: 1rem;
+    }
+
+    & .contato-infos {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    & .contato-infos img {
+        width: 24px;
+    }
+}
+
+.contato-form {
+    width: 50%;
+
+
+    .form-input {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+
+        & label {
+            padding-top: 1rem;
+        }
+
+        & input {
+            min-width: 100%;
+            outline: 0;
+            border: 0;
+        }
+
+        & textarea {
+            border: 0;
+            min-width: 100%;
+            min-height: 80px;
+            outline: 0;
+        }
+
+    }
+        & .btn {
+            background-color: #aedd2b;
+            border: 0;
+            border-radius: .5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 0.5rem 2rem;
+            margin-top: 1.2rem;
+        }
+}
+
+
+
+.seta-retornar {
+    width: 65px;
+    transform: rotate(270deg);
+    position: fixed;
+    top: 90vh;
+    right: 15px;
+}
+
+@media (min-width: 680px) {
+    header {
+        padding: 0 3rem;
+
+        & .header-nome {
+            display: none;
+        }
+
+        & ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+
+            & a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+
+    .hero {
+        padding: 2rem 3rem 0 3rem;
+    }
+
+    #sobre,
+    #servicos,
+    #vantagens,
+    #depoimentos,
+    #contato {
+        padding: 2.5rem 3rem;
+
+    }
+}
+
+@media (min-width: 820px) {
+
+
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & h1 {
+            font-size: 4rem;
+        }
+
+        & p {
+            font-size: 1.75rem;
+        }
+
+        & img {
+            max-width: 220px;
+        }
+    }
+
+}
